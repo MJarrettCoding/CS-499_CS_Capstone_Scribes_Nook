@@ -32,6 +32,8 @@ This ePortfolio represents my growth as a developer and demonstrates my ability 
 - **APIs:** RESTful architecture  
 - **Security:** JWT authentication, bcrypt password hashing  
 
+
+
 ---
 
 ## 🎥 Informal Code Review (Milestone One)
@@ -101,6 +103,7 @@ This ePortfolio represents my growth as a developer and demonstrates my ability 
 ## 🧾 Final Reflection
 
 This project demonstrates my readiness to contribute as a professional software developer and continue growing in the field.
+
 
 ---
 
