@@ -93,7 +93,7 @@ This ePortfolio represents my growth as a developer and demonstrates my ability 
 
 ## 📂 Artifacts & Source Code
 
-- Android App Repository *(link here)*  
+- Android App Repository *(https://github.com/MJarrettCoding/CS-499_CS_Capstone_Scribes_Nook/tree/main/ScribesNook)*  
 - Backend API Repository *(link here)*  
 
 ---
