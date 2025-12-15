@@ -39,7 +39,7 @@ This ePortfolio represents my growth as a developer and demonstrates my ability 
 ## 🎥 Informal Code Review (Milestone One)
 
 **Code Review Video:**  
-👉 *Insert video link here*
+👉 (https://youtu.be/IRIFnwzyu-w)
 
 ### Code Review Focus
 - Existing application functionality  
