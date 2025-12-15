@@ -27,7 +27,7 @@ This ePortfolio represents my growth as a developer and demonstrates my ability 
 
 ### Tech Stack
 - **Frontend:** Android (Kotlin)  
-- **Backend:** Node.js + Express  
+- **Backend:** Node.js + Render  
 - **Database:** MongoDB  
 - **APIs:** RESTful architecture  
 - **Security:** JWT authentication, bcrypt password hashing  
