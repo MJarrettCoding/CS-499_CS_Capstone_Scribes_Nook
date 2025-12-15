@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/navigation_search">
+
+    <!-- Bookshelf -->
+    <fragment
+        android:id="@+id/bookshelfFragment"
+        android:name="com.example.scribesnook.ui.BookshelfFragment"
+        android:label="Bookshelf">
+
+        <action
+            android:id="@+id/action_bookshelf_to_shelfBookDetails"
+            app:destination="@id/shelfBookDetailsFragment" />
+    </fragment>
+
+    <!-- Search -->
+    <fragment
+        android:id="@+id/navigation_search"
+        android:name="com.example.scribesnook.ui.SearchFragment"
+        android:label="Search">
+
+        <action
+            android:id="@+id/action_search_to_bookDetails"
+            app:destination="@id/bookDetailsFragment" />
+    </fragment>
+
+    <!-- Add -->
+    <fragment
+        android:id="@+id/navigation_add"
+        android:name="com.example.scribesnook.ui.AddFragment"
+        android:label="Add" />
+
+    <!-- Community -->
+    <fragment
+        android:id="@+id/navigation_community"
+        android:name="com.example.scribesnook.ui.CommunityFragment"
+        android:label="Community">
+
+        <action
+            android:id="@+id/action_community_to_communityBookReviews"
+            app:destination="@id/communityBookReviewsFragment" />
+    </fragment>
+
+    <!-- Menu -->
+    <fragment
+        android:id="@+id/navigation_menu"
+        android:name="com.example.scribesnook.ui.MenuFragment"
+        android:label="Menu" />
+
+    <!-- Book Details -->
+    <fragment
+        android:id="@+id/bookDetailsFragment"
+        android:name="com.example.scribesnook.ui.BookDetailsFragment"
+        android:label="Book Details"
+        tools:layout="@layout/fragment_book_details">
+
+        <argument
+            android:name="googleBook"
+            app:argType="com.example.scribesnook.BookItem" />
+    </fragment>
+
+    <!-- Shelf Book Details -->
+    <fragment
+        android:id="@+id/shelfBookDetailsFragment"
+        android:name="com.example.scribesnook.ui.ShelfBookDetailsFragment"
+        android:label="Shelf Book Details">
+
+        <argument
+            android:name="shelfBook"
+            app:argType="com.example.scribesnook.model.ShelfBook" />
+    </fragment>
+
+    <!-- Community Book Reviews -->
+    <fragment
+        android:id="@+id/communityBookReviewsFragment"
+        android:name="com.example.scribesnook.ui.CommunityBookReviewsFragment"
+        android:label="Community Reviews">
+
+        <argument
+            android:name="googleId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>

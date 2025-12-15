@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/scrollView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- Book Cover -->
+        <ImageView
+            android:id="@+id/book_cover"
+            android:layout_width="150dp"
+            android:layout_height="220dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/book_cover"
+            android:scaleType="fitCenter" />
+
+        <!-- Title -->
+        <TextView
+            android:id="@+id/book_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- Authors -->
+        <TextView
+            android:id="@+id/book_authors"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:layout_marginTop="4dp" />
+
+        <!-- ISBN -->
+        <TextView
+            android:id="@+id/book_isbn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:layout_marginTop="8dp" />
+
+        <!-- Description -->
+        <TextView
+            android:id="@+id/book_description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp" />
+
+        <!-- Divider -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp" />
+
+        <!-- User Rating -->
+        <TextView
+            android:id="@+id/user_rating_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="User Rating"
+            android:textStyle="bold" />
+
+        <RatingBar
+        android:id="@+id/user_rating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:stepSize="0.5"
+        android:isIndicator="false" />
+
+        <!-- Spicy Rating -->
+        <TextView
+            android:id="@+id/spicy_rating_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Spicy Rating"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <RatingBar
+            android:id="@+id/spicy_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
+            android:isIndicator="false" />
+
+        <!-- Review Label -->
+        <TextView
+            android:id="@+id/review_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Review"
+            android:textStyle="bold"
+            android:layout_marginTop="12dp" />
+
+        <!-- Review EditText -->
+        <EditText
+            android:id="@+id/review_text"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:gravity="top"
+            android:background="@android:drawable/edit_text"
+            android:inputType="textMultiLine"
+            android:layout_marginTop="4dp"
+            android:padding="8dp"
+            android:scrollbars="vertical" />
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/submit_rating_review_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_marginTop="20dp" />
+
+    </LinearLayout>
+
+</ScrollView>
